@@ -8,19 +8,19 @@
 	td {
 		border: 2px lightgrey solid;
 	}
+	tr {
+		border: 2px black solid;
+/*		background-color: ; */
+		width: 50%;
+		height: 30px;
+	}
 </style>
 <body>
-	<table>
-		<tbody>
-			<tr>
-				<td>0, 0</td>
-				<td>0, 1</td>
-			</tr>
-			<tr>
-				<td>1, 0</td>
-				<td>1, 1</td>
-			</tr>
-		</tbody>
+	<button onclick="addRow ()">Add Row</button>
+	<button onclick="addColumn()">Add Column</button>
+
+	<table id = "table">
 	</table>
+	<script src="script.js"></script>
 </body>
 </html>
