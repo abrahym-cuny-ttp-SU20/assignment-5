@@ -6,7 +6,11 @@ function addRow () {
     let table = document.getElementById ("table");
     let row = document.createElement ("tr");
     table.appendChild (row);
-    for (let i = 0; i < column; i++) {
+    for (let i = 0; i < column; i++) {/*function changeColor(){
+  var selColor = document.getElementById("selColor");
+  var color = selColor.value;
+  document.body.style.backgroundColor = color;
+  }*/
         let cell = document.createElement ("td");
         row.append (cell);
         cell.textContent = "Hello";
@@ -46,6 +50,20 @@ function deleteColumn () {
     column -=1;
 }
 
+function changeColor() {
+    let table = document.getElementById("table");
+    let cell = document.getElementsByTagName("td");
+    let selColor = document.getElementById("selColor");
+    var color = selColor.value;
+   // for (let i = 0; i < row; i++) {
+     //   for (let j = 0; j < column; j++) {
+            table.addEventListener('click', (e) => {
+                table.style.backgroundColor = colour;
+            });
+       // }
+
+    //}
+}
 
 
 
