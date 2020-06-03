@@ -1,5 +1,6 @@
 let column = 1;
 
+
 function addRow () {
     
     let table = document.getElementById ("table");
@@ -10,18 +11,39 @@ function addRow () {
         row.append (cell);
         cell.textContent = "Hello";
     }
-
+   
 }
 
 function addColumn () {
     let table = document.getElementById ("table");
-    let rows = Array.from (table.children);
-    for (let i = 0; i < rows.length; i++) {
+    let colrow = Array.from (table.children);
+    for (let i = 0; i < colrow.length; i++) {
         let cell = document.createElement ("td");
-        rows[i].append (cell);
+        colrow[i].append (cell);
         cell.textContent = "Hello";
     }
     column +=1;
+}
+
+function deleteRow () {
+        let table = document.getElementById ("table").deleteRow(0);
+    }
+    
+
+
+//var firstRow = document.getElementById("myTable").rows[0];
+//firstRow.deleteCell(0);
+
+
+function deleteColumn () {
+    let table = document.getElementById ("table");
+    let rows = Array.from (table.children);
+    for (let i = 0; i < rows.length; i++) {
+        let delrow = document.getElementById ("table").rows[i];
+        delrow.deleteCell(0);
+       
+    }
+    column -=1;
 }
 
 
