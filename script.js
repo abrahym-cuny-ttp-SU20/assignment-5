@@ -6,11 +6,7 @@ function addRow () {
     let table = document.getElementById ("table");
     let row = document.createElement ("tr");
     table.appendChild (row);
-    for (let i = 0; i < column; i++) {/*function changeColor(){
-  var selColor = document.getElementById("selColor");
-  var color = selColor.value;
-  document.body.style.backgroundColor = color;
-  }*/
+    for (let i = 0; i < column; i++) {
         let cell = document.createElement ("td");
         row.append (cell);
         cell.textContent = "Hello";
@@ -50,20 +46,43 @@ function deleteColumn () {
     column -=1;
 }
 
-function changeColor() {
-    let table = document.getElementById("table");
-    let cell = document.getElementsByTagName("td");
-    let selColor = document.getElementById("selColor");
-    var color = selColor.value;
-   // for (let i = 0; i < row; i++) {
-     //   for (let j = 0; j < column; j++) {
-            table.addEventListener('click', (e) => {
-                table.style.backgroundColor = colour;
-            });
-       // }
+/****
+    Select color from dropdown
+****/
 
-    //}
+
+/****
+    Fill all uncolored cells with 
+    the currented selected color
+****/
+fillAllUncolored(){
+    return;
 }
+
+/****
+    Fill all colored cells with
+    the currently selected color
+****/
+fillAllColored(){
+    return;
+}
+
+
+/****
+    Clear all cells and restores their initial color
+****/
+restoreCells(){
+    return;
+}
+
+
+/****
+    Click and hold from a single cell, 
+    to a different cell that affects
+    all cells hovered from start to end
+    to the selected color
+****/
+//eventListener
 
 
 
