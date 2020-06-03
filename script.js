@@ -108,3 +108,10 @@ z.innerHTML="New Cell2";
 */
 
 //node.appendChild(newNode);
+
+function changeColor() {
+    let table = document.getElementById("table");
+    var selColor = document.getElementById("selColor");
+    var color = selColor.value;
+    document.table.style.backgroundColor = color;
+}
