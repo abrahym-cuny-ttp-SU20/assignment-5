@@ -46,6 +46,43 @@ function deleteColumn () {
     column -=1;
 }
 
+/****
+    Select color from dropdown
+****/
+
+
+/****
+    Fill all uncolored cells with 
+    the currented selected color
+****/
+fillAllUncolored(){
+    return;
+}
+
+/****
+    Fill all colored cells with
+    the currently selected color
+****/
+fillAllColored(){
+    return;
+}
+
+
+/****
+    Clear all cells and restores their initial color
+****/
+restoreCells(){
+    return;
+}
+
+
+/****
+    Click and hold from a single cell, 
+    to a different cell that affects
+    all cells hovered from start to end
+    to the selected color
+****/
+//eventListener
 
 
 
